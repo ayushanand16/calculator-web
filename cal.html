@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="master.css">
+  <title></title>
+</head>
+
+<body>
+  <h1 class="head" id="head">CALCULATOR</h1>
+  <label class="switch">
+  <input type="checkbox" id="yaha">
+  <span class="slider round"></span>
+</label>
+  <div class="hisbar" id="hisbar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <h3 >History</h3>
+    <ul id="his" class="his">
+
+    </ul>
+
+  </div>
+  <div class="main" id="main">
+    <button class="openbtn" onclick="openNav()">&#9776; History</button>
+    <button type="button" name="button" class="openbtn swi"  value="graph" id='switch' onclick="sw(this)">Graph Plotter</button>
+  </div>
+  <div class="buttons" id="calc">
+
+    <div class="gen" id="gen">
+      <input type="text" name="result" id="result" class="result">
+
+      <div class="b1">
+        <button type="button" name="button" id="rad_tog" onclick="rad()" value="rad" class="button">rad</button>
+        <!-- <button type="button" name="button" onclick="deg()">deg</button> -->
+        <button type="button" name="button" onclick="sqrt()" class="button">sqrt</button>
+        <button type="button" name="button" onclick="empty()" class="button">C</button>
+        <button type="button" name="button" onclick="brk(this)" class="brk" value="left">(</button>
+        <button type="button" name="button" onclick="brk(this)" class="brk" value="right">)</button>
+        <button type="button" name="button" onclick="bs()" class="button">
+          <- </button>
+            <button type="button" name="button" onclick="calculate('/')" class="button">/</button>
+      </div>
+      <div class="b2">
+        <button type="button" name="button" onclick="sin(this)" class="inv" value="inv">sin</button>
+        <button type="button" name="button" onclick="cos(this)" class="inv" value="inv">cos</button>
+        <button type="button" name="button" onclick="tan(this)" class="inv" value="inv">tan</button>
+        <button type="button" name="button" onclick="calculate('7')" class="button">7</button>
+        <button type="button" name="button" onclick="calculate('8')" class="button">8</button>
+        <button type="button" name="button" onclick="calculate('9')" class="button">9</button>
+        <button type="button" name="button" onclick="calculate('*')" class="button">x</button>
+      </div>
+      <div class="b3">
+        <button type="button" name="button" onclick="ln()" class="button">ln</button>
+        <button type="button" name="button" onclick="log()" class="button">log</button>
+        <button type="button" name="button" onclick="recipro()" class="button">1/x</button>
+        <button type="button" name="button" onclick="calculate('4')" class="button">4</button>
+        <button type="button" name="button" onclick="calculate('5')" class="button">5</button>
+        <button type="button" name="button" onclick="calculate('6')" class="button">6</button>
+        <button type="button" name="button" onclick="calculate('-')" class="button">-</button>
+      </div>
+      <div class="b4">
+        <button type="button" name="button" onclick="expo()" class="button">e<sup>x</sup> </button>
+        <button type="button" name="button" onclick="pow()" class="button">x<sup>2</sup></button>
+        <button type="button" name="button" onclick="tpow()" class="button">x<sup>y</sup></button>
+        <button type="button" name="button" onclick="calculate('1')" class="button">1</button>
+        <button type="button" name="button" onclick="calculate('2')" class="button">2</button>
+        <button type="button" name="button" onclick="calculate('3')" class="button">3</button>
+        <button type="button" name="button" onclick="calculate('+')" class="button">+</button>
+      </div>
+      <div class="b5">
+        <button type="button" name="button" onclick="mod()" class="button">|x|</button>
+        <button type="button" name="button" onclick="pie()" class="button">π</button>
+        <button type="button" name="button" onclick="nap()" class="button">e</button>
+        <button type="button" name="button" onclick="inv()" value="inv" id="inverse" class="button">INV</button>
+        <button type="button" name="button" onclick="calculate('0')" class="button">0</button>
+        <button type="button" name="button" onclick="calculate('.')" class="button">.</button>
+        <button type="button" name="button" onclick="output(this)" id='eq' value="no" class="button">=</button>
+      </div>
+    </div>
+    <script src="https://www.desmos.com/api/v1.7/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+    <div id="calculator" class="gr">
+      <script>
+        var elt = document.getElementById('calculator');
+        var calculator = Desmos.GraphingCalculator(elt);
+        calculator.setExpression({
+          id: 'graph1',
+          latex: 'y=x^2'
+        });
+      </script>
+    </div>
+    <script type="text/javascript" src="cal.js"></script>
+  </div>
+
+</body>
+
+</html>
