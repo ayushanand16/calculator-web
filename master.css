@@ -214,4 +214,22 @@ h3 {
   .hisbar a {
     font-size: 18px;
   }
+
+
+  .result {
+    width: 49em;
+    height: 7em;
+    background-color: slategray;
+}
+.button, .inv, .brk, .rad {
+    border-radius: 100px;
+    cursor: pointer;
+    background: #a5b4a2;
+    box-shadow: 20px 20px 60px #8c998a, -20px -20px 60px #becfba;
+    width: 73px;
+    height: 2em;
+    margin: 10px;
+}
+
+
 }
