@@ -206,7 +206,10 @@ h3 {
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 2) {
   .hisbar {
     padding-top: 15px;
   }
@@ -230,6 +233,8 @@ h3 {
     height: 2em;
     margin: 10px;
 }
-
+.buttons {
+  margin-top: 107px;
+}
 
 }
