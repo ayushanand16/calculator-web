@@ -124,6 +124,7 @@ h3 {
   width: 30em;
   height: 3em;
   background-color: slategray;
+  margin-top: 26px;
 }
 
 .hisbar .closebtn {
@@ -203,7 +204,6 @@ h3 {
   display: flex;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-width: 900px) and (max-height: 900px)
  {
   .hisbar {
