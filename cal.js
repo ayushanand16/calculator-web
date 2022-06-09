@@ -264,8 +264,20 @@ let output = (ele) => {
 }
 
 function openNav() {
-  document.getElementById("hisbar").style.width = "250px";
+var x = window.matchMedia("(max-width: 700px)")
+nav(x);
+// x.addListener(nav)
 
+}
+
+function nav(x){
+  if(x.matches){
+    document.getElementById("hisbar").style.width = "100%";
+    document.getElementById("result").style.marginTop = "30px";
+  }
+  else{
+    document.getElementById("hisbar").style.width = "250px";
+  }
 }
 
 function closeNav() {
