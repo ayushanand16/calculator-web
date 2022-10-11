@@ -7,4 +7,5 @@
 2. Accuracy<br>
 3. Graphing Calculator<br>
 4. Dark Mode <br>
-5. Responsive UI
+5. Responsive UI <br>
+6. Easy To Use
