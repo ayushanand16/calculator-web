@@ -6,4 +6,5 @@
 1. All Mathematical Functions<br>
 2. Accuracy<br>
 3. Graphing Calculator<br>
-4. Dark Mode
+4. Dark Mode <br>
+5. Responsive UI
